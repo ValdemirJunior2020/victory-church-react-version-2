@@ -17,7 +17,7 @@ const ScrollingContent = () => {
       {/* Full-Width Video Section */}
       <div className="full-width-video">
         <video autoPlay loop muted className="scroll-video">
-          <source src="/church-bg-video.mp4" type="video/mp4" />
+          <source src="/video/sherry.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>
