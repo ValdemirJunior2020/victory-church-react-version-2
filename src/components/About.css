@@ -1,0 +1,80 @@
+/* About Page - Full-Screen Background */
+.about-page {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("/images/about.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 50px;
+  color: white;
+}
+
+/* Dark Overlay for Better Readability */
+.about-page::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  z-index: 1;
+}
+
+/* Content Wrapper */
+.about-content {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  background: rgba(255, 255, 255, 0.15); /* Light transparency */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(5px); /* Glassmorphism effect */
+}
+
+/* Headers */
+.about-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+.about-content h2 {
+  font-size: 2rem;
+  margin-top: 20px;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Text */
+.about-content p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-top: 10px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .about-content {
+    width: 90%;
+  }
+
+  .about-content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .about-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .about-content p {
+    font-size: 1.1rem;
+  }
+}

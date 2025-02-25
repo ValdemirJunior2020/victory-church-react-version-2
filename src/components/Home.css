@@ -1,0 +1,65 @@
+/* Home Page Video Background */
+.home-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+  
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+  
+/* Overlay Content */
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+  
+.overlay h1 {
+    font-size: 48px;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+  
+/* Social Icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.social-icons a {
+    font-size: 40px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Facebook Icon - Blue */
+.social-icons .facebook-icon svg {
+    color: #1877F2 !important;
+}
+
+.social-icons .facebook-icon:hover svg {
+    color: #125ab6 !important;
+    transform: scale(1.2);
+}
+
+/* YouTube Icon - Red */
+.social-icons .youtube-icon svg {
+    color: #FF0000 !important;
+}
+
+.social-icons .youtube-icon:hover svg {
+    color: #cc0000 !important;
+    transform: scale(1.2);
+}
