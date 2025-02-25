@@ -3,7 +3,7 @@
   position: relative;
   width: 100%;
   min-height: 100vh;
-  background-image: url("/images/about.jpg"); /* Use an absolute path */
+  background-image: url("/public/images/about.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -15,7 +15,6 @@
   padding: 50px;
   color: white;
 }
-
 
 /* Dark Overlay for Better Readability */
 .about-page::before {
