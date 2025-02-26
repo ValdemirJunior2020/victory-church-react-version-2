@@ -1,101 +1,82 @@
+/* Contact Info Section (Top of Page) */
+.contact-info {
+    width: 100%;
+    text-align: center;
+    background: #f8f9fa;
+    padding: 15px 20px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    border-bottom: 2px solid #ddd;
+}
+
 /* Main Contact Container */
 .contact-container {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1100px;
     margin: auto;
-    padding: 40px 20px;
-    text-align: center;
+    padding: 30px 20px;
 }
 
-/* Contact Title */
+/* Title */
 .contact-title {
+    text-align: center;
     font-size: 2rem;
-    color: #333;
     margin-bottom: 20px;
 }
 
-/* Contact Grid Layout */
+/* Grid Layout */
 .contact-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: 1fr;
     gap: 20px;
     justify-content: center;
-    align-items: stretch;
-    padding: 20px;
 }
 
 /* Contact Card */
 .contact-card {
     background: #fff;
     padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    text-align: center;
 }
 
-.contact-card:hover {
-    transform: scale(1.03);
-}
-
-/* Full-Width Map */
+/* Google Map */
 .contact-map {
     width: 100%;
-    grid-column: span 2; /* Make the map span full width */
+    margin-top: 20px;
 }
 
-.contact-map iframe {
-    width: 100%;
-    height: 450px;
+/* ✅ Fix Review Display */
+.reviews-section {
+    text-align: left;
+    padding: 20px;
+    background: #fff;
     border-radius: 8px;
+}
+
+.review {
+    background: #f9f9f9;
+    padding: 15px;
+    margin: 10px 0;
+    border-left: 5px solid #1877F2; /* Blue border for reviews */
 }
 
 /* Social Media Links */
 .social-link {
-    display: inline-block;
-    color: #1877F2;
-    font-weight: bold;
     text-decoration: none;
-    margin: 5px 0;
+    font-weight: bold;
+    color: #1877F2; /* Facebook Blue */
     transition: color 0.3s ease;
 }
 
 .social-link:hover {
-    color: #145dbf;
+    color: #FF0000; /* YouTube Red */
 }
 
-/* Reviews Section */
-.review {
-    background: #f8f8f8;
-    padding: 15px;
-    border-radius: 6px;
-    margin: 10px 0;
-    text-align: left;
-}
-
-.review p {
-    margin: 5px 0;
-    font-size: 1rem;
-}
-
-.review strong {
-    color: #333;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
+/* Responsive Layout */
+@media (min-width: 768px) {
     .contact-grid {
-        grid-template-columns: 1fr; /* Stack cards on mobile */
-    }
-
-    .contact-title {
-        font-size: 1.8rem;
-    }
-
-    .contact-map {
-        grid-column: span 1; /* Prevents map from breaking layout */
-    }
-
-    .contact-map iframe {
-        height: 350px;
+        grid-template-columns: repeat(2, 1fr);
     }
 }

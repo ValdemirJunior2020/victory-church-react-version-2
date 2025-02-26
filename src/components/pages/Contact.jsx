@@ -4,26 +4,33 @@ import "./Contact.css"; // ✅ Import styles
 const Contact = () => {
   return (
     <div className="contact-container">
+      {/* ✅ Contact Info Section (Top of Page) */}
+      <div className="contact-info">
+        <p><strong>📍 Address:</strong> 1915 N A St, Lake Worth Beach, FL 33460</p>
+        <p><strong>📞 Phone:</strong> (561) 585-0130</p>
+        <p><strong>📧 Email:</strong> example@gmail.com</p>
+      </div>
+
       <h1 className="text-center contact-title">Contact Us</h1>
 
       <div className="contact-grid">
-        {/* Church Address */}
+        {/* Church Location */}
         <div className="contact-card">
           <h5 className="contact-title text-primary">Our Location</h5>
           <p>Victory Worship Center</p>
           <p>1915 N A St, Lake Worth Beach, FL 33460</p>
           <p><strong>Phone:</strong> (561) 585-0130</p>
+          <p><strong>Email:</strong> example@gmail.com</p>
         </div>
 
-        {/* Email & Office Hours */}
+        {/* Office Hours */}
         <div className="contact-card">
           <h5 className="contact-title text-success">Office Hours</h5>
           <p><strong>Monday - Friday:</strong> 9 AM - 5 PM</p>
           <p><strong>Sunday Service:</strong> 10 AM - 12 PM</p>
-          <p><strong>Email:</strong> info@victoryworshipcenter.com</p>
         </div>
 
-        {/* Social Media */}
+        {/* Social Media Links */}
         <div className="contact-card">
           <h5 className="contact-title text-info">Follow Us</h5>
           <p>
@@ -38,7 +45,7 @@ const Contact = () => {
           </p>
         </div>
 
-        {/* Google Map (Full Width with Church Location Marker) */}
+        {/* Google Map (Full Width with Marker) */}
         <div className="contact-map">
           <h5 className="contact-title text-warning">Find Us on Google Maps</h5>
           <iframe
@@ -53,9 +60,10 @@ const Contact = () => {
           ></iframe>
         </div>
 
-        {/* Customer Reviews */}
-        <div className="contact-card">
+        {/* ✅ Customer Reviews (Fixed Display Issue) */}
+        <div className="contact-card reviews-section">
           <h5 className="contact-title text-secondary">What People Say</h5>
+
           <div className="review">
             <p><strong>Ace Martinez</strong> - "Amazing place! You have to check it out, you will not be disappointed." ⭐⭐⭐⭐⭐</p>
           </div>
