@@ -14,14 +14,6 @@ const images = [
 const ScrollingContent = () => {
   return (
     <div className="scrolling-container">
-      {/* Full-Width Video Section */}
-      <div className="full-width-video">
-        <video autoPlay loop muted className="scroll-video">
-          <source src="/video/sherry.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
-
       {/* 7 Image Cards */}
       <div className="image-section">
         {images.map((src, index) => (

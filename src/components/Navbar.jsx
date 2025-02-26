@@ -1,13 +1,21 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 import { FaBars, FaTimes, FaFacebookF, FaYoutube } from "react-icons/fa";
 import "./Navbar.css";
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
+  const location = useLocation(); // ✅ Detects page changes
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
+
+  // ✅ Keeps navbar open when clicking "New Member"
+  useEffect(() => {
+    if (location.pathname !== "/new-member") {
+      setClick(false);
+    }
+  }, [location.pathname]);
 
   return (
     <nav className="navbar">
@@ -54,7 +62,7 @@ const Navbar = () => {
               className="nav-links"
               target="_blank"
               rel="noopener noreferrer"
-              onClick={closeMobileMenu}
+              onClick={(e) => e.stopPropagation()} // ✅ Prevents closing navbar
             >
               New Member
             </a>

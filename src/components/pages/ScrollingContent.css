@@ -1,0 +1,24 @@
+/* Mobile-First Full Width Video */
+.full-width-video {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.scroll-video {
+  width: 100%;
+  max-width: 100%;
+  height: auto; /* Keeps aspect ratio */
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Media Query for Desktop */
+@media (min-width: 768px) {
+  .scroll-video {
+    max-width: 1200px;
+  }
+}

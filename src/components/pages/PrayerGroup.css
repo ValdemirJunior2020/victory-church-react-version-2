@@ -1,0 +1,61 @@
+/* Prayer Group Container */
+.prayer-group-container {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Grid Layout for Prayer Cards */
+.prayer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* General Card Styling */
+.prayer-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.prayer-card:hover {
+    transform: scale(1.03);
+}
+
+/* Default Image Styling */
+.prayer-image {
+    width: 100%;
+    max-width: 350px; /* ✅ Set a smaller max width for all images */
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* ✅ Make Zoom Prayer & Bible Verses Images Smaller */
+.prayer-card img[alt="Zoom Prayer"], 
+.prayer-card img[alt="Bible Verses"] {
+    max-width: 250px !important; /* ✅ Smaller size */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .prayer-grid {
+        grid-template-columns: 1fr; /* Stack cards on smaller screens */
+    }
+
+    .prayer-image {
+        max-width: 100%; /* Allow images to scale down */
+    }
+
+    .prayer-card img[alt="Zoom Prayer"],
+    .prayer-card img[alt="Bible Verses"] {
+        max-width: 200px !important; /* Even smaller on mobile */
+    }
+}
