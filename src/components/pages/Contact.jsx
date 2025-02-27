@@ -8,7 +8,7 @@ const Contact = () => {
       <div className="contact-info">
         <p><strong>📍 Address:</strong> 1915 N A St, Lake Worth Beach, FL 33460</p>
         <p><strong>📞 Phone:</strong> (561) 585-0130</p>
-        <p><strong>📧 Email:</strong> example@gmail.com</p>
+        <p><strong>📧 Email:</strong> info@victoryworship.com</p>
       </div>
 
       <h1 className="text-center contact-title">Contact Us</h1>
