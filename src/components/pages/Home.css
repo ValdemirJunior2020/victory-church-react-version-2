@@ -4,6 +4,7 @@
     width: 100vw;
     height: 100vh;
     overflow: hidden;
+    background: black;
 }
   
 .bg-video {
@@ -16,10 +17,10 @@
     z-index: -1; /* Keeps it behind all content */
 }
   
-/* Move text and icons up */
+/* Overlay Content */
 .overlay {
     position: absolute;
-    top: 35%; /* Moved up more */
+    top: 35%; /* Moved up */
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -30,50 +31,35 @@
     align-items: center;
 }
 
-/* Adjust spacing of social icons */
+/* Social Icons */
 .social-icons {
     display: flex;
     justify-content: center;
-    gap: 15px; /* Reduced gap */
-    margin-top: 10px; /* Move closer to text */
+    gap: 15px;
+    margin-top: 10px;
 }
 
-/* Facebook Icon */
-.facebook-icon {
-    font-size: 2rem !important; /* Make icons smaller */
-    color: #1877F2 !important; /* Force Facebook Blue */
-    fill: #1877F2 !important;
+.facebook-icon, .youtube-icon {
+    font-size: 2rem !important;
+    transition: transform 0.3s ease-in-out;
 }
 
-/* YouTube Icon */
-.youtube-icon {
-    font-size: 2rem !important; /* Make icons smaller */
-    color: #FF0000 !important; /* Force YouTube Red */
-    fill: #FF0000 !important;
-}
-
-/* Hover Effect */
 .facebook-icon:hover, .youtube-icon:hover {
-    opacity: 1;
     transform: scale(1.1);
 }
 
-/* Mobile Responsive Fix */
+/* Mobile Fixes */
 @media (max-width: 768px) {
     .overlay {
         font-size: 1.5rem;
     }
 
-    .social-icons {
-        gap: 15px;
-    }
-
     .facebook-icon, .youtube-icon {
-        font-size: 1.8rem !important; /* Slightly smaller for mobile */
+        font-size: 1.8rem !important;
     }
 }
 
-/* Sherry Video Section */
+/* Sherry Video */
 .sherry-video-container {
     width: 100%;
     display: flex;
@@ -91,19 +77,12 @@
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Scrolling Image Section */
+/* Scrolling Content Section */
 .image-section {
     display: flex;
     flex-direction: column;
     width: 100%;
     align-items: center;
-}
-
-.image-card {
-    width: 100%;
-    max-width: 1200px;
-    height: auto;
-    margin-bottom: 20px;
 }
 
 .image-card img {
@@ -113,32 +92,9 @@
     border-radius: 8px;
 }
 
-/* Ensures Proper Layout for Larger Screens */
+/* Mobile Optimizations */
 @media (min-width: 768px) {
     .sherry-video {
         max-width: 1200px;
     }
-    
-    .image-card {
-        max-width: 1200px;
-    }
-}
-
-/* Make Icons Bigger */
-.social-icon {
-    font-size: 3.5rem !important; /* Increase size */
-    opacity: 0.7; /* Semi-transparent */
-    transition: opacity 0.3s ease, transform 0.3s ease;
-}
-/* Force override for icons */
-.social-icons .facebook-icon,
-.overlay .facebook-icon {
-    color: #1877F2 !important;
-    fill: #1877F2 !important;
-}
-
-.social-icons .youtube-icon,
-.overlay .youtube-icon {
-    color: #FF0000 !important;
-    fill: #FF0000 !important;
 }
