@@ -16,10 +16,10 @@
     z-index: -1; /* Keeps it behind all content */
 }
   
-/* Overlay Content on Top of Video */
+/* Move text and icons up */
 .overlay {
     position: absolute;
-    top: 50%;
+    top: 35%; /* Moved up more */
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -30,35 +30,32 @@
     align-items: center;
 }
 
-/* Centered Social Icons */
+/* Adjust spacing of social icons */
 .social-icons {
     display: flex;
     justify-content: center;
-    gap: 25px; /* More space between icons */
-    margin-top: 20px;
+    gap: 15px; /* Reduced gap */
+    margin-top: 10px; /* Move closer to text */
 }
 
-/* Style for each social icon */
-.facebook-icon, .youtube-icon {
-    font-size: 2.5rem; /* Bigger and bolder */
-    opacity: 0.7; /* Transparent look */
-    transition: opacity 0.3s ease, transform 0.3s ease;
-}
-
-/* Force Facebook Icon to Blue */
+/* Facebook Icon */
 .facebook-icon {
-    color: #1877F2 !important; /* Facebook Blue */
+    font-size: 2rem !important; /* Make icons smaller */
+    color: #1877F2 !important; /* Force Facebook Blue */
+    fill: #1877F2 !important;
 }
 
-/* Force YouTube Icon to Red */
+/* YouTube Icon */
 .youtube-icon {
-    color: #FF0000 !important; /* YouTube Red */
+    font-size: 2rem !important; /* Make icons smaller */
+    color: #FF0000 !important; /* Force YouTube Red */
+    fill: #FF0000 !important;
 }
 
-/* Hover Effect: Full Color & Slight Scale */
+/* Hover Effect */
 .facebook-icon:hover, .youtube-icon:hover {
     opacity: 1;
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 /* Mobile Responsive Fix */
@@ -72,7 +69,7 @@
     }
 
     .facebook-icon, .youtube-icon {
-        font-size: 2rem; /* Slightly smaller for mobile */
+        font-size: 1.8rem !important; /* Slightly smaller for mobile */
     }
 }
 
@@ -126,9 +123,22 @@
         max-width: 1200px;
     }
 }
+
 /* Make Icons Bigger */
 .social-icon {
     font-size: 3.5rem !important; /* Increase size */
     opacity: 0.7; /* Semi-transparent */
     transition: opacity 0.3s ease, transform 0.3s ease;
+}
+/* Force override for icons */
+.social-icons .facebook-icon,
+.overlay .facebook-icon {
+    color: #1877F2 !important;
+    fill: #1877F2 !important;
+}
+
+.social-icons .youtube-icon,
+.overlay .youtube-icon {
+    color: #FF0000 !important;
+    fill: #FF0000 !important;
 }

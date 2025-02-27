@@ -69,15 +69,7 @@ const Navbar = () => {
           </li>
         </ul>
 
-        {/* Social Media Icons */}
-        <div className="social-icons">
-          <a href="https://www.facebook.com/groups/56003018318" target="_blank" rel="noopener noreferrer">
-            <FaFacebookF />
-          </a>
-          <a href="https://www.youtube.com/@VictoryWorshipCenter" target="_blank" rel="noopener noreferrer">
-            <FaYoutube />
-          </a>
-        </div>
+       
       </div>
     </nav>
   );

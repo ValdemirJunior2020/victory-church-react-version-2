@@ -15,7 +15,8 @@ const Home = () => {
 
         {/* Overlay Content on Worship Video */}
         <div className="overlay">
-          <h1>Welcome to Church</h1>
+          <h1>Welcome to Victory Worship Center Page</h1>
+          <p>Watch us Live!</p>
           <div className="social-icons">
             {/* Facebook Icon with Redirect */}
             <a
