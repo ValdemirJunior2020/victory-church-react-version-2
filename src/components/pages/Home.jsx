@@ -15,7 +15,7 @@ const Home = () => {
 
         {/* Overlay Content on Worship Video */}
         <div className="overlay">
-          <h1>Welcome to Victory Worship Center Page</h1>
+          <h2>Welcome to Victory Worship Center Page</h2>
           <p>Watch us Live!</p>
           <div className="social-icons">
             {/* Facebook Icon with Redirect */}
@@ -44,12 +44,19 @@ const Home = () => {
       </div>
 
       {/* Sherry Video (With Controls) */}
-      <div className="sherry-video-container">
-        <video controls playsInline className="sherry-video" preload="metadata">
-          <source src="/video/sherry.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
+<div className="sherry-video-container">
+  <video 
+    controls 
+    playsInline 
+    className="sherry-video" 
+    preload="metadata"
+    poster="/images/thumbnail.jpg" // Add this line
+  >
+    <source src="/video/sherry.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+</div>
+
 
       {/* Scrolling Content Section */}
       <ScrollingContent />
