@@ -9,6 +9,7 @@ const images = [
   "/images/image5.jpg",
   "/images/image6.jpg",
   "/images/image7.jpg",
+  "/images/image8.jpg",
 ];
 
 const ScrollingContent = () => {
