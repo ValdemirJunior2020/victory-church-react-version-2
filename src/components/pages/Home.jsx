@@ -8,10 +8,8 @@ const Home = () => {
     <div className="home-wrapper">
       {/* Full-Screen Background Video */}
       <div className="video-section">
-        <video autoPlay loop muted playsInline preload="auto" className="bg-video">
-          <source src={`${process.env.PUBLIC_URL}/church-bg-video.mp4`} type="video/mp4" />
-          <source src={`${process.env.PUBLIC_URL}/church-bg-video.webm`} type="video/webm" />
-          <source src={`${process.env.PUBLIC_URL}/church-bg-video.ogg`} type="video/ogg" />
+        <video autoPlay loop muted className="bg-video">
+          <source src="/church-bg-video.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
@@ -45,16 +43,16 @@ const Home = () => {
         </div>
       </div>
 
-      {/* Additional Video Section */}
+      {/* Sherry Video (With Controls) */}
       <div className="sherry-video-container">
         <video 
           controls 
           playsInline 
-          preload="metadata"
           className="sherry-video" 
-          poster={`${process.env.PUBLIC_URL}/images/thumbnail.jpg`}
+          preload="metadata"
+          poster="/images/thumbnail.jpg"
         >
-          <source src={`${process.env.PUBLIC_URL}/video/sherry.mp4`} type="video/mp4" />
+          <source src="/video/sherry.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>
