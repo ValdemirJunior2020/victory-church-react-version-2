@@ -1,19 +1,35 @@
-/* src/components/pages/About.css */
 .about-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 20px;
+  
   position: relative;
 }
 
+
+
+
+
+
+/* Adds a semi-transparent dark overlay for readability */
 .about-container::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
-  width: "100%";
-  height: "100%";
-  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
   z-index: 1;
 }
 
+/* Content container should be above the overlay */
 .about-content {
   position: relative;
   z-index: 2;
@@ -21,11 +37,12 @@
   padding: 20px;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 10px;
-  color: black;
+  color: white;
   font-size: medium;
   font-weight: bold;
 }
 
+/* Styling for text */
 .about-title {
   font-size: 2.5rem;
   margin-bottom: 10px;
@@ -59,7 +76,7 @@
   .about-title {
     font-size: 2rem;
   }
-  
+
   .about-description,
   .about-mission {
     font-size: 1rem;

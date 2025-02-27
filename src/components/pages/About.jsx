@@ -1,26 +1,21 @@
 import React from "react";
-import "./About.css"; // Assumes About.css is in src/components/pages/
+import "./About.css"; // Keep CSS styles
+import AboutImage from "../../assets/images/about.jpg"; // ✅ Import the image
 
 const About = () => {
-  const containerStyle = {
-    width: "100%",
-    height: "100vh",
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "center",
-    alignItems: "center",
-    textAlign: "center",
-    color: "white",
-    padding: "20px",
-    background: "url('/images/about.jpg') no-repeat center center/cover", // Image in public/
-    position: "relative",
-  };
-
   return (
-    <div className="about-container" style={containerStyle}>
+    <div
+      className="about-container"
+      style={{
+        backgroundImage: `url(${AboutImage})`, // ✅ Set imported image
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+      }}
+    >
       <div className="about-content">
         <h1 className="about-title">About Victory Worship Center</h1>
-        
+
         <p className="about-description">
           Welcome to Victory Worship Center! We are a faith-driven community dedicated to 
           spreading the love of God, moving in the Spirit, and making an impact through worship, 
