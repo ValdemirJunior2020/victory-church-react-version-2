@@ -7,15 +7,17 @@ const Events = () => {
       {/* Page Title */}
       <h1 className="events-title">Victory Worship Center</h1>
 
-      {/* Victory Family Night */}
-      <div className="event-card">
-        <img src="/images/event-1.jpg" alt="Victory Family Night" className="event-image" />
-        <h2 className="event-header text-primary">VICTORY FAMILY NIGHT</h2>
-        <p className="event-text">
-          <span className="event-highlight">Wed., March 5th</span>
-        </p>
-        <p className="event-text">Join us for a fun-filled evening with activities for all ages!</p>
-      </div>
+ {/* Victory Family Night */}
+<div className="event-card">
+  <img src="/images/img-2.jpg" alt="Victory Family Night" className="event-image" />
+  <h2 className="event-header text-primary">VICTORY FAMILY NIGHT</h2>
+  <p className="event-text">
+    <span className="event-highlight">Wed., March 5th</span>
+  </p>
+  <p className="event-text">Join us for a fun-filled evening with activities for all ages!</p>
+</div>
+
+
 
       {/* Weekly Events */}
       <div className="event-card">
