@@ -20,10 +20,9 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-container">
-      <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-  <img src="/logo.png" alt="Victory Worship Logo" className="navbar-logo-img" />
-</Link>
-
+        <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
+          Victory Worship
+        </Link>
 
         {/* Mobile Menu Icon */}
         <div className="menu-icon" onClick={handleClick}>
