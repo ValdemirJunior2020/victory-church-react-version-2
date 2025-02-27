@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { FaBars, FaTimes, FaFacebookF, FaYoutube } from "react-icons/fa";
+import { FaBars, FaTimes } from "react-icons/fa"; // ✅ Removed unused FaFacebookF & FaYoutube
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -68,8 +68,6 @@ const Navbar = () => {
             </a>
           </li>
         </ul>
-
-       
       </div>
     </nav>
   );
